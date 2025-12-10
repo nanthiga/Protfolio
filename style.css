@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libertinus Sans", sans-serif;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  /* Fixes navbar at the top */
+  top: 0;
+  /* Always at top */
+  left: 0;
+  /* Start from left */
+  width: 100%;
+  /* Full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+  /* Ensure it’s above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+#logo h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Navigation links */
+nav div a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav div a:hover {
+  color: #FDC435;
+}
+
+/* Body Section */
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  min-height: 90vh;
+}
+
+/* Left content */
+.content {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+#p1 {
+  color: #FDC435;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.content p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.content button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+#Prjt {
+  background-color: #FDC435;
+  border: none;
+
+}
+
+#btn {
+  border: 1px solid #000;
+  background: none;
+  color: #000;
+}
+
+/* Image blob shape */
+.img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.img svg {
+  position: absolute;
+  width: 70%;
+  /* smaller SVG blob */
+  height: auto;
+  margin-left: 25%;
+  z-index: 1;
+}
+
+.img img {
+  width: 35%;
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+  margin-left: 20%;
+}
+
+
+/* About Section */
+.About {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  background-color: #f9f9f9;
+}
+
+.about {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.about h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.about button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  background-color: #FDC435;
+
+}
+
+/* About Image Circle */
+.img1 {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.img1 .circle {
+  width: 250px;
+  height: 250px;
+  background-color: #FDC435;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.img1 img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Project Section */
+.Project h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 40px 0;
+}
+
+.Project hr {
+  width: 10%;
+  margin: -2% 45%;
+  height: 6px;
+  background-color: #FDC435;
+  border: none;
+  border-radius: 3px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px auto;
+  width: 60%;
+  /* smaller overall width */
+  max-width: 1000px;
+  /* limit max width */
+}
+
+/* Individual Project Card */
+.prjt-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Text Section */
+.section {
+  flex: 1 1 250px;
+  /* smaller min-width */
+  background-color: whitesmoke;
+  padding: 50px 30px;
+
+}
+
+section p {
+  color: #333;
+  font-size: lighter;
+  line-height: 1.6;
+}
+
+.section a {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Right Image Section */
+.prjt-img {
+  flex: 1 1 250px;
+  /* smaller min-width */
+  display: flex;
+  justify-content: right;
+  background-color: #fff;
+}
+
+.prjt-img img {
+  width: 100%;
+  max-width: 460px;
+  /* smaller image */
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Contact Section */
+.Contact {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #25282B;
+  text-align: center;
+}
+
+.title-underline {
+  width: 100px;
+  height: 4px;
+  background-color: #FDC435;
+  border-radius: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #25282B;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  border: 1px solid #E8ECF4;
+  border-radius: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+button {
+  width: 120px;
+  padding: 10px 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #FDC435;
+  color: #25282B;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  color: #25282B;
+}
+
+.footer-center h4,
+.footer-right h4 {
+  font-size: 18px;
+  color: #25282B;
+  margin-bottom: 12px;
+}
+
+.footer-center a,
+.footer-right a {
+  text-decoration: none;
+  color: #25282B;
+  margin: 6px 0;
+  display: inline-block;
+}
+
+.footer-center a:hover,
+.footer-right a:hover {
+  color: #FDC435;
+}
+
+.social-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
